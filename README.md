@@ -7,7 +7,7 @@ mysql > insert into user (id,name,username,password)
 <br />  -> values (3,"b","def","456");
 <br />  -> values (4,"c","ghi","789");
 <br />  -> values (5,"d","jkl","000");
-![image](https://github.com/amberteng407/week5_assignment_mysql/blob/main/image/Insert.png)
+<br />  ![image](https://github.com/amberteng407/week5_assignment_mysql/blob/main/image/Insert.png)
 
 mysql > select * from user;
 ![image](https://github.com/amberteng407/week5_assignment_mysql/blob/main/image/Select%20all.png)
@@ -41,10 +41,10 @@ mysql > select * from message;
 mysql > select user.name, message.content
 <br />  -> from message Inner join user
 <br />  -> on user.id = message.user_id;
-![image](https://github.com/amberteng407/week5_assignment_mysql/blob/main/image/Join%20name.png)
+<br />  ![image](https://github.com/amberteng407/week5_assignment_mysql/blob/main/image/Join%20name.png)
 
 mysql > select user.name, user.username, message.content
 <br />  -> from message Inner join user
 <br />  -> on user.id = message.user_id;
 <br />  -> where user.username = "ply";
-![image](https://github.com/amberteng407/week5_assignment_mysql/blob/main/image/Join%20username.png)
+<br />  ![image](https://github.com/amberteng407/week5_assignment_mysql/blob/main/image/Join%20username.png)
