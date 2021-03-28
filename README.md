@@ -32,3 +32,19 @@ mysql > update user set name="丁滿" where username="ply";
 
 mysql > delete from user;
 ![image](https://github.com/amberteng407/week5_assignment_mysql/blob/main/image/Delete%20all.png)
+
+
+## 要求四
+mysql > select * from message;
+![image](https://github.com/amberteng407/week5_assignment_mysql/blob/main/image/Insert%20message.png)
+
+mysql > select user.name, message.content
+<br />  -> from message Inner join user
+<br />  -> on user.id = message.user_id;
+![image](https://github.com/amberteng407/week5_assignment_mysql/blob/main/image/Join%20name.png)
+
+mysql > select user.name, user.username, message.content
+<br />  -> from message Inner join user
+<br />  -> on user.id = message.user_id;
+<br />  -> where user.username = "ply";
+![image](https://github.com/amberteng407/week5_assignment_mysql/blob/main/image/Join%20username.png)
