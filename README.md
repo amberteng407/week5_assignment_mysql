@@ -41,8 +41,8 @@ mysql > select * from message;
 mysql > select user.name, message.content
 <br />  -> from message Inner join user
 <br />  -> on user.id = message.user_id;
-<br />  ![image](https://github.com/amberteng407/week5_assignment_mysql/blob/main/image/Join%20name.png)
-<br /> 
+<br />  ![image](https://github.com/amberteng407/week5_assignment_mysql/blob/main/image/Join%20name.png) 
+
 mysql > select user.name, user.username, message.content
 <br />  -> from message Inner join user
 <br />  -> on user.id = message.user_id;
